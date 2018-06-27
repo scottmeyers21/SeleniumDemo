@@ -35,6 +35,11 @@ namespace SeleniumDemo1
                 return driver.FindElement(By.Id("sign_in_btnundefined"));
             }
         }
+        public IWebElement MyAccountLink {
+            get {
+                return driver.FindElement(By.XPath("//*[@id='loginMiniTitle']/label[1]"));
+            }
+        }
 
 
         public void AOSLogin(string username, string password) {
